@@ -8,11 +8,21 @@
         </table_tennis_stats>
 
         <table_tennis_match_stats>
+            <id></id>
 
+            <points></points><!--overall points-->
+            <max_points_in_row></max_points_in_row><!--largest value-->
+
+            <biggest_lead></biggest_lead>
+            <service_points_won></service_points_won>
+            <reciever_points_won></reciever_points_won>
+            <service_error></service_error> <!--forced error-->
+            <unforced_error></unforced_error> <!--Player touches table-->
         </table_tennis_match_stats><!--all game stats-->
 
         <table_table_tennis_game_stats>
             <id></id>
+            <match_id></match_id> <!--fk towrds current match-->
             <player_id></player_id><!--Refers to player-->
             <event_id></event_id><!--Refers to event-->
             <game_number></game_number>
@@ -22,8 +32,8 @@
             <biggest_lead></biggest_lead>
             <service_points_won></service_points_won>
             <reciever_points_won></reciever_points_won>
-            <service_error></service_error> <!--unforced error putting your hand on table-->
-            <forced_error></forced_error> <!--Player cant avoid mistake-->
+            <service_error></service_error> <!--forced error-->
+            <unforced_error></unforced_error> <!--Player touches table-->
         </table_table_tennis_game_stats> <!--Rounds win 11 points to win one-->
 
         <table_tennis_event_states>
