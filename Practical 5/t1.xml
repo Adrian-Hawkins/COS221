@@ -1,11 +1,5 @@
 <sports-event>
     <sports-metadata event-status="post-event" type="table tennis stats">
-        <table_tennis_stats>
-            <id>1</id>
-            <serves_played>20</serves_played>
-            <matches_played>4</matches_played> <!--maximum of 5 minimum of 3-->
-            <aces>0</aces><!--opponent doesnt return ball-->
-        </table_tennis_stats>
 
         <table_tennis_match_stats>
             <id></id>
@@ -13,6 +7,7 @@
             <points></points><!--overall points-->
             <max_points_in_row></max_points_in_row><!--largest value-->
 
+            <serves_played>20</serves_played>
             <biggest_lead></biggest_lead>
             <service_points_won></service_points_won>
             <reciever_points_won></reciever_points_won>
@@ -30,15 +25,17 @@
             <max_points_in_row></max_points_in_row>
 
             <biggest_lead></biggest_lead>
+            <serves_played>20</serves_played>
             <service_points_won></service_points_won>
             <reciever_points_won></reciever_points_won>
             <service_error></service_error> <!--forced error-->
             <unforced_error></unforced_error> <!--Player touches table-->
+            <aces>0</aces><!--opponent doesnt return ball-->
         </table_table_tennis_game_stats> <!--Rounds win 11 points to win one-->
 
         <table_tennis_event_states>
             <id>1</id>
-            <event_id>5</event_id>
+            <event_name></event_name><!--unique-->
             <current_state>post-event</current_state>
             <game>3</game><!--of the whole tournament? Would this be refering to rounds and pre qualifiers or just a number-->
             <server_person_id>1</server_person_id>
@@ -46,6 +43,7 @@
             <reciever_person_id>2</reciever_person_id>
             <reciever_person_score>11</reciever_person_score>
             <serve_number>24</serve_number>
+            <matches_played>4</matches_played> <!--maximum of 5 minimum of 3-->
             <context>????????</context>
             <document_id>????????</document_id>
         </table_tennis_event_states>
