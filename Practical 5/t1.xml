@@ -8,10 +8,23 @@
         </table_tennis_stats>
 
         <table_tennis_match_stats>
-            
+
         </table_tennis_match_stats><!--all game stats-->
 
-        <table_table_tennis_game_stats></table_table_tennis_game_stats> <!--Rounds win 11 points to win one-->
+        <table_table_tennis_game_stats>
+            <id></id>
+            <player_id></player_id><!--Refers to player-->
+            <event_id></event_id><!--Refers to event-->
+            <game_number></game_number>
+            <points></points>
+            <max_points_in_row></max_points_in_row>
+
+            <biggest_lead></biggest_lead>
+            <service_points_won></service_points_won>
+            <reciever_points_won></reciever_points_won>
+            <service_error></service_error> <!--unforced error putting your hand on table-->
+            <forced_error></forced_error> <!--Player cant avoid mistake-->
+        </table_table_tennis_game_stats> <!--Rounds win 11 points to win one-->
 
         <table_tennis_event_states>
             <id>1</id>
@@ -33,7 +46,7 @@
             <winners><!--FK to player id??--></winners>
             <unforced_errors>1</unforced_errors><!--shots to good to return-->
             <forced_error></forced_error><!--putting hand on table etc-->
-            <duece>True</duece>
+            <deuce>True</deuce>
             <winners_forehand>15</winners_forehand><!--Would these two be considered ints?-->
             <winners_backhand>3</winners_backhand>
         </table_tennis_player_stats>
@@ -43,7 +56,7 @@
             <points_won>12</points_won>
             <winners><!--FK to player id??--></winners>
             <unforced_errors>1</unforced_errors>
-            <duece>True</duece>
+            <duece>True</deuce>
             <winners_forehand>15</winners_forehand><!--Would these two be considered ints?-->
             <winners_backhand>3</winners_backhand>
         </table_tennis_doubles_stats>
