@@ -1,0 +1,58 @@
+<sports-event>
+    <sports-metadata event-status="post-event" type="table tennis stats">
+        <table_tennis_stats>
+            <id>1</id>
+            <serves_played>20</serves_played>
+            <matches_played>4</matches_played> <!--maximum of 5 minimum of 3-->
+            <aces>0</aces><!--opponent doesnt return ball-->
+        </table_tennis_stats>
+
+        <table_tennis_event_states>
+            <id>1</id>
+            <event_id>5</event_id>
+            <current_state>post-event</current_state>
+            <game>3</game><!--of the whole tournament? Would this be refering to rounds and pre qualifiers or just a number-->
+            <server_person_id>1</server_person_id>
+            <server_person_score>13</server_person_score>
+            <reciever_person_id>2</reciever_person_id>
+            <reciever_person_score>11</reciever_person_score>
+            <serve_number>24</serve_number>
+            <context>????????</context>
+            <document_id>????????</document_id>
+        </table_tennis_event_states>
+
+        <table_tennis_player_stats>
+            <id>1</id>
+            <points_won>12</points_won>
+            <winners><!--FK to player id??--></winners>
+            <unforced_errors>1</unforced_errors><!--shots to good to return-->
+            <forced_error></forced_error><!--putting hand on table etc-->
+            <duece>True</duece>
+            <winners_forehand>15</winners_forehand><!--Would these two be considered ints?-->
+            <winners_backhand>3</winners_backhand>
+        </table_tennis_player_stats>
+
+        <table_tennis_doubles_stats>
+            <id>1</id>
+            <points_won>12</points_won>
+            <winners><!--FK to player id??--></winners>
+            <unforced_errors>1</unforced_errors>
+            <duece>True</duece>
+            <winners_forehand>15</winners_forehand><!--Would these two be considered ints?-->
+            <winners_backhand>3</winners_backhand>
+        </table_tennis_doubles_stats>
+    </sports-metadata>
+
+    <player>
+        <player-metadata>
+            <country>China</country>
+            <!--Age birth_date etc-->
+        </player-metadata>
+    </player>
+    <team>
+        <team-metadata>
+            <!--For doubles-->
+            <!--teams can just have two foreign keys that refer back to players-->
+        </team-metadata>
+    </team>
+</sports-event>
