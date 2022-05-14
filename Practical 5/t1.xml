@@ -7,6 +7,12 @@
             <aces>0</aces><!--opponent doesnt return ball-->
         </table_tennis_stats>
 
+        <table_tennis_match_stats>
+            
+        </table_tennis_match_stats><!--all game stats-->
+
+        <table_table_tennis_game_stats></table_table_tennis_game_stats> <!--Rounds win 11 points to win one-->
+
         <table_tennis_event_states>
             <id>1</id>
             <event_id>5</event_id>
