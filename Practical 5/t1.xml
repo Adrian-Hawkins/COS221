@@ -9,7 +9,7 @@
 
         <table_tennis_match_stats>
             <id></id>
-
+            <event_id></event_id><!--FK to event-->
             <points></points><!--overall points-->
             <max_points_in_row></max_points_in_row><!--largest value-->
 
