@@ -1,1 +1,2 @@
 Can the sport be a team and single sports?
+Where can we download the  sportsdb database schema?
