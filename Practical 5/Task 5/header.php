@@ -9,7 +9,7 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="#">Add Player</a></li>
+                    <li><a href="manageplayers.php">Add Player</a></li>
                     <li><a href="#">Add Event</a></li>
                     <li><a href="#">Manage Event</a></li>
                     <li><a href="#">View Statistics</a></li>
