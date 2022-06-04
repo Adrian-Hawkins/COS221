@@ -1,4 +1,5 @@
 <?php
+    include_once 'header.php';
     include 'config.php';
     $result = mysqli_query($conn, "SELECT * FROM table_tennis_event_stats");
     if($result->num_rows > 0){
@@ -75,18 +76,20 @@
 </head>
 <body>
     <style>
-        table, th, td {
-  border:1px solid black;
-  text-align: center;
-}
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-h2, h3{
+table, th, td {
+    border:1px solid black;
+  	color: black;
     text-align: center;
-}
+  }
+  .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  h2, h3{
+    color: black;
+      text-align: center;
+  }
     </style>
 </body>
 </html>
