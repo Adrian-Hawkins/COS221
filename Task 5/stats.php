@@ -37,14 +37,45 @@
                     //echo "Loser: ".$loser;
 
                     echo "<td>".$row2["match_id"]."</td>";
-                    echo "<td>".$winner."</td>";
-                    echo "<td>".$loser."</td>";
+                    //echo "<td>".$winner."</td>";
+                    //echo "<td>".$loser."</td>";
+                    $r7 = mysqli_query($conn, "SELECT * FROM person_info WHERE person_id=$winner");
+                    if($r7->num_rows > 0){
+                        while($row7 = $r7->fetch_assoc()){
+                            echo "<td>".$row7["name"]."</td>";
+                        }
+                    }
+
+                    $r8 = mysqli_query($conn, "SELECT * FROM person_info WHERE person_id=$loser");
+                    if($r8->num_rows > 0){
+                        while($row8 = $r8->fetch_assoc()){
+                            echo "<td>".$row8["name"]."</td>";
+                        }
+                    }
+
+
                     echo "<td>";
                     $r3 = mysqli_query($conn, "SELECT * FROM table_tennis_game_stats WHERE match_stats_id=$id2");
                     if($r3->num_rows > 0){
                         echo "<ol>";
                         while($row3 = $r3->fetch_assoc()){
-                            echo "<li>"."Winner: ".$row3["game_winner_id"]."<br/>"."Loser: ".$row3["game_loser_id"]."</li>";
+                            //echo "<li>"."Winner: ".$row3["game_winner_id"]."<br/>"."Loser: ".$row3["game_loser_id"]."</li>";
+                            $gwinner = $row3["game_winner_id"];
+                            $gloser = $row3["game_loser_id"];
+
+                            $r9 = mysqli_query($conn, "SELECT * FROM person_info WHERE person_id=$gwinner");
+                            if($r9->num_rows > 0){
+                                while($row9 = $r9->fetch_assoc()){
+                                    echo "<li>Winner: ".$row9["name"]."</li>";
+                                }
+                            }
+
+                            $r10 = mysqli_query($conn, "SELECT * FROM person_info WHERE person_id=$gloser");
+                            if($r10->num_rows > 0){
+                                while($row10 = $r10->fetch_assoc()){
+                                    echo "<li>Loser: ".$row10["name"]."</li>";
+                                }
+                            }
                         }
                         echo "</ol>";
                     }

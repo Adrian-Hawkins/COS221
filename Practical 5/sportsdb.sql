@@ -1512,6 +1512,17 @@ LOCK TABLES `persons_media` WRITE;
 /*!40000 ALTER TABLE `persons_media` ENABLE KEYS */;
 UNLOCK TABLES;
 
+DROP TABLE IF EXISTS 'person_info';
+CREATE TABLE 'person_info'(
+  'name' varchar(255) NOT NULL,
+  'person_id' int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+LOCK TABLES 'person_info' WRITE;
+
+INSERT INTO 'person_info' VALUES("Kamo", 3),("Adrian", 2),("Daniel", 4),("Precious", 5),("Rea", 6),("Mashilo", 7),("Bob", 8),("John", 9),("Mark", 10),("Paul", 11),("Charlie", 12),("Vesily", 13),("Mae Dong", 14),("Michael", 15),("James", 16),("Polina", 17),("Petrova", 18);
+UNLOCK TABLES;
+
 --
 -- Table structure for table `positions`
 --
