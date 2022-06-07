@@ -10,7 +10,7 @@
             <nav>
                 <ul>
                     <li><a href="manageplayers.php">Add Player</a></li>
-                    <li><a href="#">Add Event</a></li>
+                    <li><a href="capture_tournament_media.php">Add Event</a></li>
                     <li><a href="#">Manage Event</a></li>
                     <li><a href="stats.php">View Statistics</a></li>
                     <li><a href="#">Login</a></li>
