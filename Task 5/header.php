@@ -13,7 +13,7 @@
                     <li><a href="capture_tournament_media.php">Add Event</a></li>
                     <li><a href="#">Manage Event</a></li>
                     <li><a href="stats.php">View Statistics</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="login.php">Login</a></li>
 					<li><a href="insert_location_data.php">Insert game location data</a></li>
                     <li><a href="view_location_data.php">View game location data</a></li>
                 </ul>
