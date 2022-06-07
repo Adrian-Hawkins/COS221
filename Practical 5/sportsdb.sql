@@ -7851,7 +7851,7 @@ CREATE TABLE `players` (
   `birth_date` date DEFAULT NULL,
   `organisation` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7881,7 +7881,8 @@ INSERT INTO `players` VALUES
 (19,'Chuang','Chih-Yuan','male','1997-03-04','ITTF'),
 (20,'Lin','Gaoyuan','male','1997-03-04','ITTF'),
 (21,'Omar','Assar','male','1997-03-04','ITTF'),
-(23,'Hugo','Tom','male','1999-03-04','TTIT');
+(23,'Hugo','Tom','male','1999-03-04','TTIT'),
+(24,'Hugo','Tom','male','1999-03-04','TTIT');
 /*!40000 ALTER TABLE `players` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -10531,6 +10532,38 @@ LOCK TABLES `tennis_team_stats` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `tournament_media`
+--
+
+DROP TABLE IF EXISTS `tournament_media`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tournament_media` (
+  `tournament_name` varchar(255) DEFAULT NULL,
+  `tournament_media` blob DEFAULT NULL,
+  `game_media` blob DEFAULT NULL,
+  `player_media` blob DEFAULT NULL,
+  `player_1_name` varchar(255) DEFAULT NULL,
+  `player_1_surname` varchar(255) DEFAULT NULL,
+  `player_2_name` varchar(255) DEFAULT NULL,
+  `player_2_surname` varchar(255) DEFAULT NULL,
+  `player_1_score` int(11) DEFAULT NULL,
+  `player_2_score` int(11) DEFAULT NULL,
+  `player_1_game_number` int(11) DEFAULT NULL,
+  `player_2_game_number` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tournament_media`
+--
+
+LOCK TABLES `tournament_media` WRITE;
+/*!40000 ALTER TABLE `tournament_media` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tournament_media` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `users`
 --
 
@@ -10555,6 +10588,8 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES
+(3,'mashilo','u18169377@tuks.co.za','Mashilotebatso67&',1,'');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -10782,4 +10817,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-07 20:23:15
+-- Dump completed on 2022-06-07 21:52:39
