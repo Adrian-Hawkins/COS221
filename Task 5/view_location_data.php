@@ -8,6 +8,7 @@
 </head>
 
 <?php
+    include 'config.php';
     include_once 'header.php';
 
     if(isset($_POST['tournament_name']) )
@@ -16,11 +17,12 @@
         $tournament_name_user_entry = $_POST['tournament_name'];
 
         $sql_code = "SELECT game_location, player_1_name, player_2_name
-        FROM `game_location` WHERE tournament_name = '$tournament_name_user_entry'" ;
+        FROM game_location WHERE tournament_name = '$tournament_name_user_entry'" ;
 
         try
         {
-            $result = $conn->query($sql_code);
+            $result = mysqli_query($conn, $sql_code);
+            //$result = $conn->query($sql_code);
 
             while ($row = $result->fetch_row()) 
             {

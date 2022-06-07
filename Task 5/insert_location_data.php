@@ -8,6 +8,7 @@
 </head>
 
 <?php
+    include 'config.php';
     include_once 'header.php';
 
     if(isset($_POST['tournament_name']) )
