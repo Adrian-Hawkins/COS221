@@ -10588,6 +10588,12 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+(1,'Adrian','email@example.com','1234',33,'admin');
+(2,'Daniel','email2@example.com','1234',33,'admin');
+(3,'Mashilo','email3@example.com','1234',33,'admin');
+(4,'Rea','email4@example.com','1234',33,'admin');
+(5,'Kamo','email5@example.com','1234',33,'admin');
+(6,'Precious','email6@example.com','1234',33,'admin');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
